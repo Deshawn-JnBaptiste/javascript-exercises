@@ -1,6 +1,10 @@
-const removeFromArray = function(arr, a) {
-   let index = arr.findIndex((item) => item == a);
-   arr.splice(index, 1)
+const removeFromArray = function(arr, ...etc) {
+
+    for (const arg of etc) {
+        let index = arr.findIndex((item) => item == arg);
+        arr.splice(index, 1)
+    }
+    
    return arr;
 };
 
