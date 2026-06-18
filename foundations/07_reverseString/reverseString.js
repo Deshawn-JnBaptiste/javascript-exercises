@@ -1,5 +1,7 @@
 const reverseString = function(str) {
- let array = str.split("")
+ let array = str.split("");
+ array.reverse();
+ return array.toString().replaceAll(",", "")
 };
 
 // Do not edit below this line
