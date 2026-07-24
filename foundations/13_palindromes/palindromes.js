@@ -1,11 +1,10 @@
 const palindromes = function (string) {
     
-    let letters = string.split("");
-    letters.reverse();
+    let normalizedString = string.toLowerCase().replaceAll(/[^a-z]/g, "")
 
-    let newString = letters.join("");
-    
-    return newString === string;
+    let reversedString = normalizedString.split("").reverse().join("");
+
+    return reversedString === normalizedString;
 };
 
 // Do not edit below this line
