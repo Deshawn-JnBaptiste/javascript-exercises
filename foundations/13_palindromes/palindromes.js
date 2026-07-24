@@ -1,6 +1,6 @@
 const palindromes = function (string) {
     
-    let normalizedString = string.toLowerCase().replaceAll(/[^a-z]/g, "")
+    let normalizedString = string.toLowerCase().replaceAll(/[^a-z0-9]/g, "")
 
     let reversedString = normalizedString.split("").reverse().join("");
 
