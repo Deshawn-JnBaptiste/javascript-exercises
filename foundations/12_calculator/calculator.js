@@ -11,7 +11,7 @@ const sum = function(arr) {
 };
 
 const multiply = function(arr) {
-  arr.reduce((total, num) => total * num);
+   return arr.reduce((total, num) => total * num, 1);
 };
 
 const power = function(base, exponent) {
