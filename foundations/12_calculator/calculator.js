@@ -7,7 +7,7 @@ const subtract = function(num1, num2) {
 };
 
 const sum = function(arr) {
-	arr.reduce((total, num) => total + num);
+	 return arr.reduce((total, num) => total + num, 0);
 };
 
 const multiply = function(arr) {
@@ -21,8 +21,8 @@ const power = function(base, exponent) {
   }
     return result;
 };
-
-const factorial = function() {
+// 4 
+const factorial = function(num) {
 	
 };
 
