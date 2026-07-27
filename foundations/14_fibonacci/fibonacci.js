@@ -1,8 +1,8 @@
-const fibonacci = function(index) {
+const fibonacci = function(n) {
    let previous = 1;
    let current = 1;
    let next;
-   
+   const index = Number(n);
 
    switch (index) {
     case 0:
