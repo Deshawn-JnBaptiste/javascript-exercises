@@ -4,6 +4,10 @@ const fibonacci = function(n) {
    let next;
    const index = Number(n);
 
+   if (index < 0) {
+    return "OOPS"
+   }
+
    switch (index) {
     case 0:
         return 0;
@@ -13,7 +17,6 @@ const fibonacci = function(n) {
         return 1;
    }
    
-
    for(let i = 2; i < index; i++) {
     next = previous + current;
     previous = current;
