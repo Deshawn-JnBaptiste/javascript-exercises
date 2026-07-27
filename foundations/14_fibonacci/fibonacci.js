@@ -2,12 +2,19 @@ const fibonacci = function(index) {
    let previous = 1;
    let current = 1;
    let next;
+   
 
-   if (index == 1 || index == 2) {
-    return 1;
+   switch (index) {
+    case 0:
+        return 0;
+    case 1:
+        return 1;
+    case 2:
+        return 1;
    }
+   
 
-   for(let i = 0; i < index; i++) {
+   for(let i = 2; i < index; i++) {
     next = previous + current;
     previous = current;
     current = next;
