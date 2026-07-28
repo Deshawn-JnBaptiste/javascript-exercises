@@ -21,7 +21,7 @@ const power = function(base, exponent) {
   }
     return result;
 };
-// 4 
+
 const factorial = function(num) {
 	let result = 1;
   for (let i = num; i > 0; i--) {
