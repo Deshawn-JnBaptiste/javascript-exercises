@@ -1,22 +1,14 @@
 const findTheOldest = function(arr) {
-    const newPeople = arr.map((person) => {
 
-        const newPerson = {
-            name: person.name,
-            yearOfBirth: person.yearOfBirth,
-            yearOfDeath: person.yearOfDeath,
-        }
+    function getAge(person) {
+            if (!Object.hasOwn(person, "yearOfDeath")) {
+                const currentDate = new Date().getFullYear();
+                return currentDate - person.yearOfBirth
+        }  
+           return person.yearOfDeath - person.yearOfBirth;
         
-        if (!Object.hasOwn(person, "yearOfDeath")) {
-            const currentDate = new Date().getFullYear();
-            newPerson.age = currentDate - person.yearOfBirth
-        } else {
-            newPerson.age = person.yearOfDeath - person.yearOfBirth;
         }
-
-        return newPerson
-    })
-};
+    }
 
 // Do not edit below this line
 module.exports = findTheOldest;
